@@ -1,0 +1,15 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="18dp" android:background="#F5F7FA"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="Tambah User PPPoE" android:textSize="25sp" android:textStyle="bold"
+        android:layout_marginBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/name" android:hint="Nama user" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/password" android:hint="Password (kosong = sama dengan nama)"
+        android:inputType="textPassword" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Spinner android:id="@+id/profile" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/create" android:text="BUAT USER" android:layout_marginTop="15dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/status" android:layout_marginTop="12dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

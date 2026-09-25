@@ -1,0 +1,7 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#F5F7FA" android:layout_width="match_parent" android:layout_height="match_parent">
+ <TextView android:text="PPPoE Profiles" android:textColor="#FFFFFF" android:textSize="24sp" android:textStyle="bold" android:padding="18dp" android:background="@drawable/bg_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+  <LinearLayout android:id="@+id/list" android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ </ScrollView>
+</LinearLayout>

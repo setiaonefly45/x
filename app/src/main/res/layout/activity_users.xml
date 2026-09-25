@@ -1,0 +1,14 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#F5F7FA" android:layout_width="match_parent" android:layout_height="match_parent">
+ <TextView android:text="User PPPoE" android:textColor="#FFFFFF" android:textSize="24sp" android:textStyle="bold" android:padding="18dp" android:background="@drawable/bg_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <EditText android:id="@+id/search" android:hint="Cari username..." android:padding="12dp" android:layout_margin="10dp" android:background="@drawable/bg_card" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+  <Button android:id="@+id/all" android:text="ALL" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/onlineOnly" android:text="ONLINE" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/offlineOnly" android:text="OFFLINE" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/disabledOnly" android:text="DISABLED" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+ </LinearLayout>
+ <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+  <LinearLayout android:id="@+id/list" android:orientation="vertical" android:padding="9dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ </ScrollView>
+</LinearLayout>

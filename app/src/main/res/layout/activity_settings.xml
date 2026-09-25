@@ -1,0 +1,22 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F5F7FA" android:layout_width="match_parent" android:layout_height="match_parent">
+ <LinearLayout android:orientation="vertical" android:padding="20dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+  <TextView android:text="Koneksi MikroTik" android:textSize="25sp" android:textStyle="bold"
+      android:layout_marginBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+  <EditText android:id="@+id/host" android:hint="IP / Host MikroTik" android:inputType="textUri" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <EditText android:id="@+id/port" android:hint="Port HTTPS (443)" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <EditText android:id="@+id/user" android:hint="Username" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <EditText android:id="@+id/pass" android:hint="Password" android:inputType="textPassword" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <CheckBox android:id="@+id/insecure" android:text="Self-signed certificate (testing LAN only)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#D0D5DD" android:layout_marginTop="14dp"/>
+  <TextView android:text="Background Monitoring" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+  <Switch android:id="@+id/notifySwitch" android:text="Notifikasi user online/offline" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <Spinner android:id="@+id/interval" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <TextView android:text="Notifikasi hanya dikirim saat status user berubah agar tidak spam." android:textColor="#667085" android:layout_marginTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/test" android:text="TEST CONNECTION" android:layout_marginTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/save" android:text="SAVE" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <TextView android:id="@+id/status" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ </LinearLayout>
+</ScrollView>
